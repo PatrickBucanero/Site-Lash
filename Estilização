@@ -1,0 +1,71 @@
+Paleta de Cores: ver a paleta de cores dela.
+(opções) Tons pastéis, como rosa claro, lavanda ou azul bebê, combinados com cores neutras como branco, cinza e dourado, funcionam bem.
+
+Tipografia
+Fontes para títulos (como "Playfair Display" ou "Merriweather") e sans-serif para o corpo do texto (como "Roboto" ou "Lato"). Isso ajuda a criar uma hierarquia visual.
+
+Tamanhos e Espaçamento: Tamanhos de fonte maiores para títulos e bom espaçamento entre linhas e parágrafos para facilitar a leitura.
+
+Layout Responsivo
+Design Flexível: Utilize um layout responsivo que se ajuste a diferentes tamanhos de tela. Frameworks como Bootstrap ou CSS Grid podem ajudar.
+Imagens de Alta Qualidade: Use imagens grandes e de alta qualidade para mostrar os serviços e produtos. Isso cativa os visitantes logo de cara.
+
+Elementos Visuais
+Hero Section: Crie uma seção inicial impactante com uma imagem de fundo grande e um slogan atraente.
+Botões Chamativos: Use botões com cores contrastantes e bordas arredondadas. Certifique-se de que sejam grandes o suficiente para serem facilmente clicáveis.
+
+Animações e Interatividade
+Efeitos de Hover: Adicione efeitos de hover em botões e links para tornar a navegação mais interativa.
+Scroll Suave: Use animações suaves ao rolar a página para dar uma sensação de fluidez.
+
+Seções do Site
+Serviços em Destaque: Crie cartões para cada serviço com uma imagem, descrição e um botão de agendamento.
+
+Footer
+Informações de Contato: Inclua links para redes sociais e informações de contato de forma organizada.
+
+ CSS Moderno
+
+Código: 
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-image: url('sua-imagem-de-fundo.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff4a3a;
+}
+
+
+PRONTO TIO TATIKI
