@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
     <title>Lojinha Ana Clara</title>
-</head>
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
 
-<body>
-    <div id="titulo"> 
-<h1> lash Ana Oliveira </h1>
-</div>
-<div id="geral">
-    <h2> Quem Somos</h2>
-        <p>
-            Somos uma startup de estética focada em aplições de cilios e Design de sobrancelhas , inicamos nossos trabalhos em 4/12/2023 com a missão de trazer personalidade no olhar dos clientes.
-             Atraves de diversas experiencias com os atendimentos  descobrimos que não é só uma simples aplicação mas sim a autoestima do cliente que é renovada  e a experincia única.
-        </p>
-            <p>
-                Siga nas nossas redes!
-                <ul>  
-                        <li> telefone de contato <button id="bnt-contado"> (13)981250906 </button> </li>
-                        <li> <a href="https://www.instagram.com/lash.anaoliveira_/" class="instagram"> instagram </a> </li>
-        
-                        <li><a href="https://www.tiktok.com/@lash.anaoliveira_?lang=pt-BR"> TikTok </a> </li>
-                </ul>
-        </p>
-</div>
+  <body>
+    <div id="titulo">
+      <h1>lash Ana Oliveira</h1>
+    </div>
+    <div id="geral">
+      <!-- <h2>Quem Somos</h2>
+      <p>
+        Somos uma startup de estética focada em aplições de cilios e Design de
+        sobrancelhas , inicamos nossos trabalhos em 4/12/2023 com a missão de
+        trazer personalidade no olhar dos clientes. Atraves de diversas
+        experiencias com os atendimentos descobrimos que não é só uma simples
+        aplicação mas sim a autoestima do cliente que é renovada e a experincia
+        única.
+      </p>
+      <p>
+        Siga nas nossas redes! telefone de contato
+        <button id="bnt-contado">(13)981250906</button>
+        <a href="https://www.instagram.com/lash.anaoliveira_/">
+          <img src="Logo insta.jpeg" alt="Logo Insta" class="Logo insta"
+        /></a>
+        <strong> Instagram</strong>
 
- <!--<table>
+        <a href="https://www.tiktok.com/@lash.anaoliveira_?lang=pt-BR">
+          <img src="Logo tiktok.jpeg" alt="Logo tiktok" class="logotiktok" />
+        </a>
+      </p>
+    </div>-->
+
+    <!--<table>
 
    <tr> 
         <th> Cilios </th>     <th> Sobrancelhas </th>
@@ -52,11 +59,41 @@
        </tr>
 
 </table>-->
-<div id="Botões">
-<button id="bnt-cilios"> aplicação cilios  </button>  <button id="bnt-cobrancelhas"> Sobrancelhas</button>
+    <!-- Botões -->
+<div id="botoes">
+  <button id="btn-cilios">Aplicação de Cílios</button>
+  <button id="btn-sobrancelhas">Sobrancelhas</button>
 </div>
 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <div class="social-icons">
+      <a href="https://api.whatsapp.com/" >
+          <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/lash.anaoliveira_/" >
+          <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@lash.anaoliveira_?lang=pt-BR">
+          <i class="fab fa-tiktok"></i>
+      </a>
+  </div>
+  <div class="slideshow-container">
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <img src="Cilios/Cilios.png" >
+        </div>
+        <div class="mySlides fade">
+            <img src="Cilios/cilios 2.png" >
+        </div>
+        <div class="mySlides fade">
+            <img src="Cilios/cilios3.png" >
+        </div>
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
 
-</body>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+  <script src="BackEnd/Js.js"> </script>
+  </body>
 </html>

@@ -1,0 +1,178 @@
+/* Reset de Margens e Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffd9d9;
+}
+
+/* Estilo do Título */
+#titulo {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: #d07877;
+}
+
+/* Estilo Geral */
+#geral {
+    padding: 20px;
+}
+
+/* Estilo dos Serviços */
+.servicos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servico {
+    flex: 1 1 300px; /* Tamanho mínimo de 300px */
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos {
+        flex-direction: column; /* Coluna em telas menores */
+    }
+}
+
+/* Estilo para Redes Sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+.redes-sociais img {
+    width: 30px; /* Tamanho da imagem */
+    margin-right: 5px; /* Espaço entre a imagem e o texto */
+}
+
+/* Centralizar os ícones no rodapé */
+.social-icons {
+    position: fixed; /* Fixa no final da página */
+    bottom: 0;  /* Coloca no final da página */
+    left: 50%;  /* Move para o centro da página */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o conteúdo da div */
+    background-color: #f8f8f8; /* Opcional: cor de fundo */
+    padding: 10px;  /* Espaçamento ao redor dos ícones */
+    width: 100%;  /* Pode ser ajustado conforme a necessidade */
+}
+
+/* Estilo dos links e ícones */
+.social-icons a {
+    margin: 0 15px;  /* Espaçamento entre os ícones */
+    color: #000;  /* Cor dos ícones */
+    font-size: 24px;  /* Tamanho dos ícones */
+    text-decoration: none;  /* Remove sublinhado */
+}
+
+.social-icons a:hover {
+    color: #d07877;  /* Cor ao passar o mouse */
+}
+/* Estilo dos botões */
+#botoes {
+    text-align: center; /* Centraliza os botões */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+#botoes button {
+    background-color: #d07877; /* Cor principal usada anteriormente */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove bordas padrão */
+    padding: 15px 30px; /* Tamanho ideal do botão */
+    font-size: 16px; /* Tamanho do texto */
+    margin: 10px; /* Espaço entre os botões */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de clique */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+#botoes button:hover {
+    background-color: #c06766; /* Tom mais escuro ao passar o mouse */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 90%; /* Máximo de 90% da largura da página */
+    margin: auto; /* Centraliza o slideshow */
+    padding-top: 20px; /* Espaçamento superior */
+    padding-bottom: 20px; /* Espaçamento inferior */
+}
+
+.mySlides {
+    display: none; /* Esconde os slides por padrão */
+    position: relative; /* Posicionamento relativo para as setas */
+}
+
+.mySlides img {
+    width: 100%; /* Imagens ocupam toda a largura do slide */
+    max-width: 800px; /* Largura máxima para as imagens */
+    height: auto; /* Altura automática para manter a proporção */
+    max-height: 400px; /* Define uma altura máxima para as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+    display: block;
+    margin: 0 auto; /* Centraliza as imagens */
+    border-radius: 10px; /* Bordas arredondadas para um efeito suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destaque */
+}
+
+.prev, .next {
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    width: auto; /* Largura automática */
+    padding: 16px; /* Espaçamento ao redor do texto */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 18px; /* Tamanho do texto */
+    transition: 0.6s ease; /* Animação suave */
+    border-radius: 0 3px 3px 0; /* Bordas arredondadas */
+    user-select: none; /* Impede seleção de texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+}
+
+.prev {
+    left: 0; /* Posiciona à esquerda */
+}
+
+.next {
+    right: 0; /* Posiciona à direita */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Escurece ao passar o mouse */
+}
+
+/* Efeito de transição entre os slides */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
