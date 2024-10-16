@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #ffd9d9;
+    padding-bottom: 100px;
 }
 
 /* Estilo do Título */
@@ -116,10 +117,10 @@ body {
 
 .slideshow-container {
     position: relative;
-    max-width: 90%; /* Máximo de 90% da largura da página */
+    max-width: 30%; /* Máximo de 90% da largura da página */
     margin: auto; /* Centraliza o slideshow */
     padding-top: 20px; /* Espaçamento superior */
-    padding-bottom: 20px; /* Espaçamento inferior */
+    padding-bottom: 100px; /* Espaçamento inferior */
 }
 
 .mySlides {
@@ -128,10 +129,10 @@ body {
 }
 
 .mySlides img {
-    width: 100%; /* Imagens ocupam toda a largura do slide */
-    max-width: 800px; /* Largura máxima para as imagens */
+    width: 80%; /* Imagens ocupam toda a largura do slide */
+    max-width: 700px; /* Largura máxima para as imagens */
     height: auto; /* Altura automática para manter a proporção */
-    max-height: 400px; /* Define uma altura máxima para as imagens */
+    max-height: 500px; /* Define uma altura máxima para as imagens */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
     display: block;
     margin: 0 auto; /* Centraliza as imagens */
@@ -144,7 +145,7 @@ body {
     position: absolute;
     top: 50%; /* Centraliza verticalmente */
     width: auto; /* Largura automática */
-    padding: 16px; /* Espaçamento ao redor do texto */
+    padding: 10px; /* Espaçamento ao redor do texto */
     color: white; /* Cor do texto */
     font-weight: bold; /* Negrito */
     font-size: 18px; /* Tamanho do texto */
@@ -175,4 +176,54 @@ body {
 @keyframes fade {
     from { opacity: 0.4; }
     to { opacity: 1; }
+}
+/* Estilos para a seção "Quem Sou" */
+#eu {
+    max-width: 800px;
+    margin: 40px auto; /* Centraliza o conteúdo na página */
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza o texto */
+    font-family: Arial, sans-serif;
+}
+
+#eu h2 {
+    font-size: 2rem;
+    color: #d07877; /* Cor personalizada para o título */
+    margin-bottom: 20px;
+}
+
+#eu p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+/* Estilos para a imagem de Ana Clara */
+#fotoana {
+    width: 200px; /* Define um tamanho para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Faz a imagem ser redonda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra à imagem */
+    margin-top: 20px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    #eu {
+        padding: 10px;
+    }
+
+    #eu p {
+        font-size: 1rem;
+    }
+
+    #fotoana {
+        width: 150px; /* Tamanho menor da imagem em telas pequenas */
+    }
 }
